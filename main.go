@@ -4,9 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"live_forward/model"
 	"net/http"
 	"net/url"
+
+	"github.com/ringo199/live_forward/model"
 )
 
 func getRequest(apiUrl string, params *map[string]string, header *map[string]string) (*http.Request, error) {
